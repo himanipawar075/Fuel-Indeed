@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-# Fuel-Indeedcd
-d:\fuel_indeed-main\fuel_indeed-main
 
-# Add the remote repository
-git remote add origin https://github.com/himanipawar075/fuel-Indeed.git
-
-# Rename branch to main (optional but recommended)
-git branch -M main
-
-# Push to GitHub
-git push -u origin main
-git remote add origin git@github.com:himanipawar075/Fuel-Indeed.git
-git branch -M main
-git push -u origin main
-=======
 # ⛽ fuel-indeed – Fuel Ordering & Platform Management Web App
 
 ## 📌 Project Overview
