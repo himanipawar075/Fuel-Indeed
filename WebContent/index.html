@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+        .dark-royal-blue {
+            background-color: #002366;
+        }
+        .gold {
+            background-color: #FFD700;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex">
+
+    <!-- Sidebar -->
+    <div class="w-1/4 dark-royal-blue text-white min-h-screen p-6">
+        <h1 class="text-3xl font-bold mb-6">Login Portal</h1>
+        <nav>
+            <ul>
+                <li class="mb-4">
+                    <a href="#" onclick="showForm('adminForm')" class="text-lg flex items-center">
+                        <i class="fa-solid fa-user-shield mr-2"></i>Admin Login
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" onclick="showForm('fuelStationForm')" class="text-lg flex items-center">
+                        <i class="fa-solid fa-gas-pump mr-2"></i>Fuel Station Login
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" onclick="showForm('userForm')" class="text-lg flex items-center">
+                        <i class="fa-solid fa-user mr-2"></i>User Login
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="showForm('deliveryPersonForm')" class="text-lg flex items-center">
+                        <i class="fa-solid fa-truck mr-2"></i>Delivery Person Login
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="w-3/4 flex items-center justify-center min-h-screen">
+
+        <!-- Admin Login Form -->
+        <div id="adminForm" class="container mx-auto max-w-sm bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-6 text-center text-dark-royal-blue">Admin Login</h2>
+            <form action="AdminLogin" method="post">
+                <div class="mb-4">
+                    <input type="text" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-dark-royal-blue" placeholder="Enter Your Email" required>
+                </div>
+                <div class="mb-6">
+                    <input type="password" name="password" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-dark-royal-blue" placeholder="Enter Your Password" required>
+                </div>
+                <div class="mb-4">
+                    <input type="submit" value="Login" class="w-full gold text-white p-3 rounded-lg hover:bg-yellow-600 transition duration-300 cursor-pointer">
+                </div>
+            </form>
+        </div>
+
+        <!-- Fuel Station Login Form -->
+        <div id="fuelStationForm" class="container mx-auto max-w-sm bg-white p-8 rounded-lg shadow-lg hidden">
+            <h2 class="text-2xl font-bold mb-6 text-center text-dark-royal-blue">Fuel Station Login</h2>
+            <form action="FuelStation_login" method="post">
+                <div class="mb-4">
+                    <input type="text" name="femail" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-dark-royal-blue" placeholder="Enter Your Email" required>
+                </div>
+                <div class="mb-6">
+                    <input type="password" name="fpassword" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-dark-royal-blue" placeholder="Enter Your Password" required>
+                </div>
+                <div class="mb-4">
+                    <input type="submit" value="Login" class="w-full gold text-white p-3 rounded-lg hover:bg-yellow-600 transition duration-300 cursor-pointer">
+                </div>
+            </form>
+            <a href="fuelStation_register.html" class="block text-blue-500 mt-4">New User? Click here to Register</a>
+        </div>
+
+        <!-- User Login Form -->
+        <div id="userForm" class="container mx-auto max-w-sm bg-white p-8 rounded-lg shadow-lg hidden">
+            <h2 class="text-2xl font-bold mb-6 text-center text-dark-royal-blue">User Login</h2>
+            <form action="User_login" method="post">
+                <div class="mb-4">
+                    <input type="text" name="uemail" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-dark-royal-blue" placeholder="Enter Your Email" required>
+                </div>
+                <div class="mb-6">
+                    <input type="password" name="upassword" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-dark-royal-blue" placeholder="Enter Your Password" required>
+                </div>
+                <div class="mb-4">
+                    <input type="submit" value="Login" class="w-full gold text-white p-3 rounded-lg hover:bg-yellow-600 transition duration-300 cursor-pointer">
+                </div>
+            </form>
+        </div>
+
+        <!-- Delivery Person Login Form -->
+        <div id="deliveryPersonForm" class="container mx-auto max-w-sm bg-white p-8 rounded-lg shadow-lg hidden">
+            <h2 class="text-2xl font-bold mb-6 text-center text-dark-royal-blue">Delivery Person Login</h2>
+            <form action="DeliveryPerson_login" method="post">
+                <div class="mb-4">
+                    <input type="text" name="demail" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-dark-royal-blue" placeholder="Enter Your Email" required>
+                </div>
+                <div class="mb-6">
+                    <input type="password" name="dpassword" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-dark-royal-blue" placeholder="Enter Your Password" required>
+                </div>
+                <div class="mb-4">
+                    <input type="submit" value="Login" class="w-full gold text-white p-3 rounded-lg hover:bg-yellow-600 transition duration-300 cursor-pointer">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function showForm(formId) {
+            // Hide all forms
+            document.getElementById('adminForm').classList.add('hidden');
+            document.getElementById('fuelStationForm').classList.add('hidden');
+            document.getElementById('userForm').classList.add('hidden');
+            document.getElementById('deliveryPersonForm').classList.add('hidden');
+
+            // Show the selected form
+            document.getElementById(formId).classList.remove('hidden');
+        }
+    </script>
+</body>
+
+</html>

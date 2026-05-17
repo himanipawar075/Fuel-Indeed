@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Fuel</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        .dark-royal-blue {
+            background-color: #002366;
+        }
+        .gold {
+            background-color: #FFD700;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Main Container -->
+    <div class="flex min-h-screen">
+        
+        <!-- Sidebar -->
+        <div class="w-1/4 dark-royal-blue text-white p-6">
+            <h1 class="text-3xl font-bold mb-6">Register Fuel Station</h1>
+            <nav>
+                <ul>
+                    <!-- Add navigation links if needed -->
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="w-3/4 p-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Enter the Following Details:</h3>
+                <form action="FuelStation_register" method="post">
+                    <div class="mb-4">
+                        <label for="fname" class="block text-gray-700 font-medium mb-2">Name</label>
+                        <input type="text" name="fname" id="fname" placeholder="Fuel Station Name" class="form-input w-full border-gray-300 rounded-lg p-3">
+                    </div>
+                    <div class="mb-4">
+                        <label for="fcontact" class="block text-gray-700 font-medium mb-2">Contact</label>
+                        <input type="text" name="fcontact" id="fcontact" placeholder="Contact Number" class="form-input w-full border-gray-300 rounded-lg p-3">
+                    </div>
+                    <div class="mb-4">
+                        <label for="femail" class="block text-gray-700 font-medium mb-2">Email</label>
+                        <input type="email" name="femail" id="femail" placeholder="Email Address" class="form-input w-full border-gray-300 rounded-lg p-3">
+                    </div>
+                    <div class="mb-4">
+                        <label for="fpassword" class="block text-gray-700 font-medium mb-2">Password</label>
+                        <input type="password" name="fpassword" id="fpassword" placeholder="Password" class="form-input w-full border-gray-300 rounded-lg p-3">
+                    </div>
+                    <div class="mb-4">
+                        <label for="fcity" class="block text-gray-700 font-medium mb-2">City</label>
+                        <input type="text" name="fcity" id="fcity" placeholder="City" class="form-input w-full border-gray-300 rounded-lg p-3">
+                    </div>
+                    <div class="mb-4">
+                        <label for="faddress" class="block text-gray-700 font-medium mb-2">Address</label>
+                        <input type="text" name="faddress" id="faddress" placeholder="Address" class="form-input w-full border-gray-300 rounded-lg p-3">
+                    </div>
+                    <div class="mb-4">
+                        <label for="farea" class="block text-gray-700 font-medium mb-2">Area</label>
+                        <input type="text" name="farea" id="farea" placeholder="Area" class="form-input w-full border-gray-300 rounded-lg p-3">
+                    </div>
+                    <div class="mb-4">
+                        <label for="fpincode" class="block text-gray-700 font-medium mb-2">Pincode</label>
+                        <input type="text" name="fpincode" id="fpincode" placeholder="Pincode" class="form-input w-full border-gray-300 rounded-lg p-3">
+                    </div>
+                    <div class="mb-4">
+                        <label for="fpetrolqty" class="block text-gray-700 font-medium mb-2">Petrol Quantity</label>
+                        <input type="number" step="any" name="fpetrolqty" id="fpetrolqty" placeholder="Petrol Quantity" class="form-input w-full border-gray-300 rounded-lg p-3">
+                    </div>
+                    <div class="mb-4">
+                        <label for="fpetrolrate" class="block text-gray-700 font-medium mb-2">Petrol Rate</label>
+                        <input type="number" step="any" name="fpetrolrate" id="fpetrolrate" placeholder="Petrol Rate" class="form-input w-full border-gray-300 rounded-lg p-3">
+                    </div>
+                    <div class="mb-4">
+                        <label for="fdiselqty" class="block text-gray-700 font-medium mb-2">Diesel Quantity</label>
+                        <input type="number" step="any" name="fdiselqty" id="fdiselqty" placeholder="Diesel Quantity" class="form-input w-full border-gray-300 rounded-lg p-3">
+                    </div>
+                    <div class="mb-4">
+                        <label for="fdiselrate" class="block text-gray-700 font-medium mb-2">Diesel Rate</label>
+                        <input type="number" step="any" name="fdiselrate" id="fdiselrate" placeholder="Diesel Rate" class="form-input w-full border-gray-300 rounded-lg p-3">
+                    </div>
+                    <div class="mb-4">
+                        <label for="fopentime" class="block text-gray-700 font-medium mb-2">Opening Time</label>
+                        <input type="text" name="fopentime" id="fopentime" placeholder="Opening Time" class="form-input w-full border-gray-300 rounded-lg p-3">
+                    </div>
+                    <div class="mb-4">
+                        <label for="fclosetime" class="block text-gray-700 font-medium mb-2">Closing Time</label>
+                        <input type="text" name="fclosetime" id="fclosetime" placeholder="Closing Time" class="form-input w-full border-gray-300 rounded-lg p-3">
+                    </div>
+                    <button type="submit" class="bg-gold text-white px-6 py-3 rounded-lg hover:bg-yellow-600 transition duration-300">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2016 Novus Admin Panel. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank" class="text-blue-400">w3layouts</a></p>
+    </footer>
+    
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+</body>
+</html>

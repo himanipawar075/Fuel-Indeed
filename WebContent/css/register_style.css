@@ -1,0 +1,27 @@
+/* Example custom styles for registration page */
+.login_section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.label_field {
+    font-weight: bold;
+}
+
+.main_bt {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.forgot {
+    margin-top: 10px;
+}
+
+/* Adjust styles as per your design requirements */

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Error Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif; /* Orange background */
+        color: #222831; /* Dark blue-grey text */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .error-container {
+        background-color: #00adb5; /* Aqua blue background */
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        width: 300px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 1.5rem;
+        color: #090c9b; /* Light grey text */
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+        color: #eeeeee; /* Light grey text */
+    }
+
+    button {
+        width: 100%;
+        padding: 0.75rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #00adb5; /* Aqua blue button */
+        color: #eeeeee; /* Light grey text */
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #023047; /* Darker aqua blue on hover */
+        color: #fb8500; /* Dark orange text on hover */
+    }
+
+    .return-link {
+        margin-top: 1rem;
+        display: block;
+        color: #00adb5; /* Aqua blue text */
+        text-decoration: none;
+    }
+
+    .return-link:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+    <div class="error-container">
+        <h2>Operation Failed</h2>
+        <h2>There was an error processing your request.</h2>
+         <button onclick="window.location.href='admin_dashboard.html'">Admin Dashboard</button>
+    </div>
+</body>
+</html>

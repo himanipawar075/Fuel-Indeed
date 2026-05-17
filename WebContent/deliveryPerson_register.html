@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Person Registration</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-md mx-auto bg-white rounded p-6 shadow-md">
+        <h2 class="text-2xl mb-4">Delivery Person Registration Form</h2>
+        <form action="DeliveryPerson_register" method="post"> 
+            <div class="mb-4"> 
+                <label for="exampleInputName" class="block text-sm font-medium text-gray-700">Name</label> 
+                <input type="text" name="dname" id="exampleInputName" placeholder="Enter your name" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+            </div>
+            <div class="mb-4"> 
+                <label for="exampleInputCity" class="block text-sm font-medium text-gray-700">City</label> 
+                <input type="text" name="dcity" id="exampleInputCity" placeholder="Enter your city" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+            </div>
+            <div class="mb-4"> 
+                <label for="exampleInputContact" class="block text-sm font-medium text-gray-700">Contact Number</label> 
+                <input type="text" name="dcontact" id="exampleInputContact" placeholder="Enter your contact number" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+            </div>
+            <div class="mb-4"> 
+                <label for="exampleInputAddress" class="block text-sm font-medium text-gray-700">Address</label> 
+                <textarea name="daddress" id="exampleInputAddress" placeholder="Enter your address" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
+            </div>
+            <div class="mb-4"> 
+                <label for="exampleInputPincode" class="block text-sm font-medium text-gray-700">Pincode</label> 
+                <input type="text" name="dpincode" id="exampleInputPincode" placeholder="Enter your pincode" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+            </div>
+            <div class="mb-4"> 
+                <label for="exampleInputEmail" class="block text-sm font-medium text-gray-700">Email address</label> 
+                <input type="email" name="demail" id="exampleInputEmail" placeholder="Enter your email" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+            </div>
+            <div class="mb-4"> 
+                <label for="exampleInputPassword" class="block text-sm font-medium text-gray-700">Password</label> 
+                <input type="password" name="dpassword" id="exampleInputPassword" placeholder="Enter password" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+            </div>
+            <button type="submit" class="bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300">Register</button> 
+        </form> 
+    </div>
+</body>
+</html>

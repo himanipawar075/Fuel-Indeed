@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Station Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+<div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+    <h3 class="text-2xl font-bold mb-6 text-center">Add Delivery Person</h3>
+    <form action="Add_delivery_person" method="post">
+        <div class="mb-4">
+            <input type="text" name="dname" placeholder="Enter name" required class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+        <div class="mb-4">
+            <input type="text" name="dcity" placeholder="Enter City" required class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+        <div class="mb-4">
+            <input type="text" name="dcontact" placeholder="Enter Contact" required class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+        <div class="mb-4">
+            <input type="text" name="daddress" placeholder="Enter Address" required class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+        <div class="mb-4">
+            <input type="text" name="dpincode" placeholder="Enter Pincode" required class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+        <div class="mb-4">
+            <input type="text" name="demail" placeholder="Enter Email" required class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+        <div class="mb-4">
+            <input type="password" name="dpassword" placeholder="Enter Password" required class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+        <div class="flex justify-center">
+            <input type="submit" value="Add" class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
